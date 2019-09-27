@@ -1,0 +1,25 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html>ss
+<head>
+	
+	<title>SEISNOVENTA</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="Software">
+	<meta name="author" content="SEISNOVENTA">
+	<link rel="stylesheet" type="text/css" href="{% static '/fontawesome/css/all.min.css' %}">
+	<link rel="stylesheet" href="{% static '/css/principal.css' %}">
+{%block head%}
+{%endblock head%}
+</head>
+<body>
+	<nav><a href="#home"><img src="{% static '/imagenes/dcsimple3-02.png'%}"></a><a href="#somos">Quienes Somos</a><a href="#servicios">Servicios</a><a href="#herramientas">Herramientas</a><a href="#contacto">Contacto</a><a href="">Log in</a></nav>
+        	{%block title%}
+          	{%endblock title%}
+          	{% block contenido %}	        	
+          	{% endblock contenido %}
+    <script type="text/javascript" src="{% static '/js/barra.js' %}"></script>
+</body>
+</html>
